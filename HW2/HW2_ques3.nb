@@ -1,0 +1,1164 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     42431,       1156]
+NotebookOptionsPosition[     40085,       1105]
+NotebookOutlinePosition[     40580,       1125]
+CellTagsIndexPosition[     40537,       1122]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"R1", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Cos", "[", "\[Psi]", "]"}], " ", ",", " ", 
+       RowBox[{"Sin", "[", "\[Psi]", "]"}], " ", ",", " ", "0"}], "}"}], " ", 
+     ",", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"Sin", "[", "\[Psi]", "]"}]}], " ", ",", " ", 
+       RowBox[{"Cos", "[", "\[Psi]", "]"}], " ", ",", " ", "0"}], "}"}], " ", 
+     ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"0", " ", ",", " ", "0", " ", ",", " ", "1"}], "}"}]}], "}"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"R2", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", " ", ",", " ", "0", " ", ",", " ", "0"}], "}"}], " ", ",", 
+     " ", 
+     RowBox[{"{", 
+      RowBox[{"0", " ", ",", " ", 
+       RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", ",", " ", 
+       RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "}"}], " ", ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"0", " ", ",", " ", 
+       RowBox[{"-", 
+        RowBox[{"Sin", "[", "\[Theta]", "]"}]}], " ", ",", " ", 
+       RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"R3", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", ",", " ", 
+        RowBox[{"Sin", "[", "\[Phi]", "]"}], " ", ",", " ", "0"}], "}"}], " ",
+       ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"Sin", "[", "\[Phi]", "]"}]}], " ", ",", " ", 
+        RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", ",", " ", "0"}], "}"}], " ",
+       ",", " ", 
+      RowBox[{"{", 
+       RowBox[{"0", " ", ",", " ", "0", " ", ",", " ", "1"}], "}"}]}], 
+     "}"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"R1", "//", "MatrixForm"}], "\[IndentingNewLine]", 
+ RowBox[{"R2", "//", "MatrixForm"}], "\[IndentingNewLine]", 
+ RowBox[{"R3", "//", "MatrixForm"}]}], "Input",
+ CellChangeTimes->{{3.7449772945243273`*^9, 3.7449774825961065`*^9}, {
+  3.7449775491677647`*^9, 3.7449775985845594`*^9}, {3.7454309624191437`*^9, 
+  3.7454310003041677`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"ae7d4b44-0f1c-484b-be77-55a4befdd355"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"Cos", "[", "\[Psi]", "]"}], 
+      RowBox[{"Sin", "[", "\[Psi]", "]"}], "0"},
+     {
+      RowBox[{"-", 
+       RowBox[{"Sin", "[", "\[Psi]", "]"}]}], 
+      RowBox[{"Cos", "[", "\[Psi]", "]"}], "0"},
+     {"0", "0", "1"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.744977599838705*^9, 3.7454308244937773`*^9, 
+  3.7454310375325985`*^9, 3.7455368809302006`*^9},
+ CellLabel->
+  "Out[14]//MatrixForm=",ExpressionUUID->"a224e1cc-a809-476b-9324-\
+1d8fbf54b283"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "0", "0"},
+     {"0", 
+      RowBox[{"Cos", "[", "\[Theta]", "]"}], 
+      RowBox[{"Sin", "[", "\[Theta]", "]"}]},
+     {"0", 
+      RowBox[{"-", 
+       RowBox[{"Sin", "[", "\[Theta]", "]"}]}], 
+      RowBox[{"Cos", "[", "\[Theta]", "]"}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.744977599838705*^9, 3.7454308244937773`*^9, 
+  3.7454310375325985`*^9, 3.745536880941742*^9},
+ CellLabel->
+  "Out[15]//MatrixForm=",ExpressionUUID->"c48bb64b-5dfe-4fff-a564-\
+f9ca86740270"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"Cos", "[", "\[Phi]", "]"}], 
+      RowBox[{"Sin", "[", "\[Phi]", "]"}], "0"},
+     {
+      RowBox[{"-", 
+       RowBox[{"Sin", "[", "\[Phi]", "]"}]}], 
+      RowBox[{"Cos", "[", "\[Phi]", "]"}], "0"},
+     {"0", "0", "1"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.744977599838705*^9, 3.7454308244937773`*^9, 
+  3.7454310375325985`*^9, 3.7455368809478345`*^9},
+ CellLabel->
+  "Out[16]//MatrixForm=",ExpressionUUID->"c2b785c1-2aac-473b-8859-\
+53cc9c3e3995"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"A3", " ", "=", " ", 
+   RowBox[{"R3", ".", "R2", ".", "R1"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Simplify", "[", "A3", "]"}], "//", "MatrixForm"}]}], "Input",
+ CellChangeTimes->{{3.7449776300317116`*^9, 3.744977646850855*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"55a9bd53-a066-4f37-b1ce-d87eb05c0c4e"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Cos", "[", "\[Psi]", "]"}]}], "-", 
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Psi]", "]"}]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+        RowBox[{"Cos", "[", "\[Psi]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Phi]", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Psi]", "]"}]}]}], 
+      RowBox[{
+       RowBox[{"Sin", "[", "\[Theta]", "]"}], " ", 
+       RowBox[{"Sin", "[", "\[Phi]", "]"}]}]},
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"Cos", "[", "\[Psi]", "]"}]}], " ", 
+        RowBox[{"Sin", "[", "\[Phi]", "]"}]}], "-", 
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+        RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Psi]", "]"}]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+        RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Cos", "[", "\[Psi]", "]"}]}], "-", 
+       RowBox[{
+        RowBox[{"Sin", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Psi]", "]"}]}]}], 
+      RowBox[{
+       RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+       RowBox[{"Sin", "[", "\[Theta]", "]"}]}]},
+     {
+      RowBox[{
+       RowBox[{"Sin", "[", "\[Theta]", "]"}], " ", 
+       RowBox[{"Sin", "[", "\[Psi]", "]"}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"Cos", "[", "\[Psi]", "]"}]}], " ", 
+       RowBox[{"Sin", "[", "\[Theta]", "]"}]}], 
+      RowBox[{"Cos", "[", "\[Theta]", "]"}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.744977648611551*^9, 3.745430827547906*^9, 
+  3.745431051671049*^9, 3.7455368834609013`*^9},
+ CellLabel->
+  "Out[18]//MatrixForm=",ExpressionUUID->"64db4812-5130-4f07-af5a-\
+0c20a3c52684"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"B3", " ", "=", " ", 
+   RowBox[{"Inverse", "[", "A3", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"FullSimplify", "[", "B3", "]"}], "//", "MatrixForm"}]}], "Input",
+ CellChangeTimes->{{3.7449776556540833`*^9, 3.744977675615959*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"3705a58e-62f2-4f9d-8316-369456b9f333"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Cos", "[", "\[Psi]", "]"}]}], "-", 
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Psi]", "]"}]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"Cos", "[", "\[Psi]", "]"}]}], " ", 
+        RowBox[{"Sin", "[", "\[Phi]", "]"}]}], "-", 
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+        RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Psi]", "]"}]}]}], 
+      RowBox[{
+       RowBox[{"Sin", "[", "\[Theta]", "]"}], " ", 
+       RowBox[{"Sin", "[", "\[Psi]", "]"}]}]},
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+        RowBox[{"Cos", "[", "\[Psi]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Phi]", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Psi]", "]"}]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+        RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Cos", "[", "\[Psi]", "]"}]}], "-", 
+       RowBox[{
+        RowBox[{"Sin", "[", "\[Phi]", "]"}], " ", 
+        RowBox[{"Sin", "[", "\[Psi]", "]"}]}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"Cos", "[", "\[Psi]", "]"}]}], " ", 
+       RowBox[{"Sin", "[", "\[Theta]", "]"}]}]},
+     {
+      RowBox[{
+       RowBox[{"Sin", "[", "\[Theta]", "]"}], " ", 
+       RowBox[{"Sin", "[", "\[Phi]", "]"}]}], 
+      RowBox[{
+       RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+       RowBox[{"Sin", "[", "\[Theta]", "]"}]}], 
+      RowBox[{"Cos", "[", "\[Theta]", "]"}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.7449776771497903`*^9, {3.7454308182800107`*^9, 3.745430829791748*^9}, 
+   3.745431053428012*^9, 3.7455368860361805`*^9},
+ CellLabel->
+  "Out[20]//MatrixForm=",ExpressionUUID->"172b2422-5513-4c05-809b-\
+b070a37de18c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"C3", " ", "=", " ", 
+   RowBox[{"Dt", "[", 
+    RowBox[{"B3", ",", "t"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"FullSimplify", "[", "C3", "]"}], "//", 
+  "TraditionalForm"}]}], "Input",
+ CellChangeTimes->{{3.7449777031498156`*^9, 3.744977725159917*^9}, {
+   3.745430773663825*^9, 3.745430813295401*^9}, {3.745430940997301*^9, 
+   3.745430954541355*^9}, {3.745431071012601*^9, 3.745431095263528*^9}, {
+   3.7454312568508744`*^9, 3.7454312643128653`*^9}, 3.7454316965666533`*^9, {
+   3.7454317391726646`*^9, 3.7454317448055944`*^9}, 3.7454317824078875`*^9, {
+   3.7454318125851865`*^9, 3.745431814219548*^9}, 3.745431853981006*^9, {
+   3.7454318856838856`*^9, 3.7454318860291452`*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"7bcc49eb-6c19-4e6c-b2a3-7da53fed9a9f"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           FractionBox[
+            RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+            RowBox[{"\[DifferentialD]", "t"}],
+            MultilineFunction->None], " ", 
+           RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+           RowBox[{"sin", "(", "\[Phi]", ")"}]}], "-", 
+          RowBox[{
+           RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+              FractionBox[
+               RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+               RowBox[{"\[DifferentialD]", "t"}],
+               MultilineFunction->None]}], "+", 
+             FractionBox[
+              RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+              RowBox[{"\[DifferentialD]", "t"}],
+              MultilineFunction->None]}], ")"}]}]}], ")"}], " ", 
+        RowBox[{"sin", "(", "\[Psi]", ")"}]}], "-", 
+       RowBox[{
+        RowBox[{"cos", "(", "\[Psi]", ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None], "+", 
+          RowBox[{
+           RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+           FractionBox[
+            RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+            RowBox[{"\[DifferentialD]", "t"}],
+            MultilineFunction->None]}]}], ")"}], " ", 
+        RowBox[{"sin", "(", "\[Phi]", ")"}]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+           FractionBox[
+            RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+            RowBox[{"\[DifferentialD]", "t"}],
+            MultilineFunction->None], " ", 
+           RowBox[{"sin", "(", "\[Theta]", ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+              FractionBox[
+               RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+               RowBox[{"\[DifferentialD]", "t"}],
+               MultilineFunction->None]}], "+", 
+             FractionBox[
+              RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+              RowBox[{"\[DifferentialD]", "t"}],
+              MultilineFunction->None]}], ")"}], " ", 
+           RowBox[{"sin", "(", "\[Phi]", ")"}]}]}], ")"}], " ", 
+        RowBox[{"sin", "(", "\[Psi]", ")"}]}], "-", 
+       RowBox[{
+        RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+        RowBox[{"cos", "(", "\[Psi]", ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None], "+", 
+          RowBox[{
+           RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+           FractionBox[
+            RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+            RowBox[{"\[DifferentialD]", "t"}],
+            MultilineFunction->None]}]}], ")"}]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"cos", "(", "\[Psi]", ")"}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Theta]", ")"}]}], "+", 
+       RowBox[{
+        RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Psi]", ")"}]}]}]},
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"cos", "(", "\[Psi]", ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+              FractionBox[
+               RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+               RowBox[{"\[DifferentialD]", "t"}],
+               MultilineFunction->None]}], "+", 
+             FractionBox[
+              RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+              RowBox[{"\[DifferentialD]", "t"}],
+              MultilineFunction->None]}], ")"}]}], "-", 
+          RowBox[{
+           FractionBox[
+            RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+            RowBox[{"\[DifferentialD]", "t"}],
+            MultilineFunction->None], " ", 
+           RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+           RowBox[{"sin", "(", "\[Phi]", ")"}]}]}], ")"}]}], "-", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None], "+", 
+          RowBox[{
+           RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+           FractionBox[
+            RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+            RowBox[{"\[DifferentialD]", "t"}],
+            MultilineFunction->None]}]}], ")"}], " ", 
+        RowBox[{"sin", "(", "\[Phi]", ")"}], " ", 
+        RowBox[{"sin", "(", "\[Psi]", ")"}]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"cos", "(", "\[Psi]", ")"}]}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+           FractionBox[
+            RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+            RowBox[{"\[DifferentialD]", "t"}],
+            MultilineFunction->None], " ", 
+           RowBox[{"sin", "(", "\[Theta]", ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+              FractionBox[
+               RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+               RowBox[{"\[DifferentialD]", "t"}],
+               MultilineFunction->None]}], "+", 
+             FractionBox[
+              RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+              RowBox[{"\[DifferentialD]", "t"}],
+              MultilineFunction->None]}], ")"}], " ", 
+           RowBox[{"sin", "(", "\[Phi]", ")"}]}]}], ")"}]}], "-", 
+       RowBox[{
+        RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None], "+", 
+          RowBox[{
+           RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+           FractionBox[
+            RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+            RowBox[{"\[DifferentialD]", "t"}],
+            MultilineFunction->None]}]}], ")"}], " ", 
+        RowBox[{"sin", "(", "\[Psi]", ")"}]}]}], 
+      RowBox[{
+       RowBox[{
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+        RowBox[{"sin", "(", "\[Psi]", ")"}]}], "-", 
+       RowBox[{
+        RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+        RowBox[{"cos", "(", "\[Psi]", ")"}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None]}]}]},
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Theta]", ")"}]}], "+", 
+       RowBox[{
+        RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Phi]", ")"}]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+        RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None]}], "-", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+        RowBox[{"sin", "(", "\[Phi]", ")"}]}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None]}], " ", 
+       RowBox[{"sin", "(", "\[Theta]", ")"}]}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.744977727882636*^9, {3.745430794224536*^9, 3.745430834326929*^9}, {
+   3.7454309437298656`*^9, 3.7454309552238426`*^9}, {3.745431040962488*^9, 
+   3.74543109625778*^9}, 3.7454317048364973`*^9, 3.745431746975793*^9, 
+   3.7454317870484343`*^9, 3.745431887435011*^9, {3.745536869313068*^9, 
+   3.74553689070817*^9}},
+ CellLabel->
+  "Out[22]//TraditionalForm=",ExpressionUUID->"f09de836-1a49-454d-93ac-\
+83e5165831b1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{"C3", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "1"}], "]"}], "]"}], "]"}], "//", "MatrixForm"}], "//",
+   "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.745431205806244*^9, 3.745431206540722*^9}, {
+  3.745536766967318*^9, 3.745536773929586*^9}, {3.7455368153182917`*^9, 
+  3.745536846612374*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"981065c1-912a-4fd0-9779-43f95b05a6f3"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{"(", "\[NoBreak]", 
+    TagBox[GridBox[{
+       {
+        RowBox[{
+         RowBox[{
+          RowBox[{"sin", "(", "\[Psi]", ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+             RowBox[{"sin", "(", "\[Phi]", ")"}], " ", 
+             FractionBox[
+              RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+              RowBox[{"\[DifferentialD]", "t"}],
+              MultilineFunction->None]}], "-", 
+            RowBox[{
+             RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+                FractionBox[
+                 RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+                 RowBox[{"\[DifferentialD]", "t"}],
+                 MultilineFunction->None]}], "+", 
+               FractionBox[
+                RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+                RowBox[{"\[DifferentialD]", "t"}],
+                MultilineFunction->None]}], ")"}]}]}], ")"}]}], "-", 
+         RowBox[{
+          RowBox[{"cos", "(", "\[Psi]", ")"}], " ", 
+          RowBox[{"sin", "(", "\[Phi]", ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+             FractionBox[
+              RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+              RowBox[{"\[DifferentialD]", "t"}],
+              MultilineFunction->None]}], "+", 
+            FractionBox[
+             RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+             RowBox[{"\[DifferentialD]", "t"}],
+             MultilineFunction->None]}], ")"}]}]}]},
+       {
+        RowBox[{
+         RowBox[{
+          RowBox[{"cos", "(", "\[Psi]", ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+                FractionBox[
+                 RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+                 RowBox[{"\[DifferentialD]", "t"}],
+                 MultilineFunction->None]}], "+", 
+               FractionBox[
+                RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+                RowBox[{"\[DifferentialD]", "t"}],
+                MultilineFunction->None]}], ")"}]}], "-", 
+            RowBox[{
+             RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+             RowBox[{"sin", "(", "\[Phi]", ")"}], " ", 
+             FractionBox[
+              RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+              RowBox[{"\[DifferentialD]", "t"}],
+              MultilineFunction->None]}]}], ")"}]}], "-", 
+         RowBox[{
+          RowBox[{"sin", "(", "\[Psi]", ")"}], " ", 
+          RowBox[{"sin", "(", "\[Phi]", ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+             FractionBox[
+              RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+              RowBox[{"\[DifferentialD]", "t"}],
+              MultilineFunction->None]}], "+", 
+            FractionBox[
+             RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+             RowBox[{"\[DifferentialD]", "t"}],
+             MultilineFunction->None]}], ")"}]}]}]},
+       {
+        RowBox[{
+         RowBox[{
+          RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+          RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None]}], "+", 
+         RowBox[{
+          RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+          RowBox[{"sin", "(", "\[Phi]", ")"}], " ", 
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None]}]}]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+        "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column], "\[NoBreak]", ")"}],
+   Function[BoxForm`e$, 
+    MatrixForm[BoxForm`e$]]], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.74543120830485*^9, {3.745536818187357*^9, 3.7455368526928773`*^9}, 
+   3.745536893069354*^9},
+ CellLabel->
+  "Out[23]//TraditionalForm=",ExpressionUUID->"91f5b400-3e16-4496-a218-\
+1787d0da2892"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{"C3", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}], "//", "MatrixForm"}], "//",
+   "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.745431231281398*^9, 3.7454312317516727`*^9}, {
+  3.745536777914564*^9, 3.7455367834033747`*^9}, {3.745536861524399*^9, 
+  3.745536862473693*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"b17060c2-8ec5-4bac-a31e-e5e60462cb1d"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{"(", "\[NoBreak]", 
+    TagBox[GridBox[{
+       {
+        RowBox[{
+         RowBox[{
+          RowBox[{"sin", "(", "\[Psi]", ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"sin", "(", "\[Phi]", ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+                FractionBox[
+                 RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+                 RowBox[{"\[DifferentialD]", "t"}],
+                 MultilineFunction->None]}], "+", 
+               FractionBox[
+                RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+                RowBox[{"\[DifferentialD]", "t"}],
+                MultilineFunction->None]}], ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+             RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+             FractionBox[
+              RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+              RowBox[{"\[DifferentialD]", "t"}],
+              MultilineFunction->None]}]}], ")"}]}], "-", 
+         RowBox[{
+          RowBox[{"cos", "(", "\[Psi]", ")"}], " ", 
+          RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+             FractionBox[
+              RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+              RowBox[{"\[DifferentialD]", "t"}],
+              MultilineFunction->None]}], "+", 
+            FractionBox[
+             RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+             RowBox[{"\[DifferentialD]", "t"}],
+             MultilineFunction->None]}], ")"}]}]}]},
+       {
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{
+           RowBox[{"cos", "(", "\[Psi]", ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"sin", "(", "\[Phi]", ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+                 FractionBox[
+                  RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+                  RowBox[{"\[DifferentialD]", "t"}],
+                  MultilineFunction->None]}], "+", 
+                FractionBox[
+                 RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+                 RowBox[{"\[DifferentialD]", "t"}],
+                 MultilineFunction->None]}], ")"}]}], "+", 
+             RowBox[{
+              RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+              RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+              FractionBox[
+               RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+               RowBox[{"\[DifferentialD]", "t"}],
+               MultilineFunction->None]}]}], ")"}]}]}], "-", 
+         RowBox[{
+          RowBox[{"sin", "(", "\[Psi]", ")"}], " ", 
+          RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+             FractionBox[
+              RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+              RowBox[{"\[DifferentialD]", "t"}],
+              MultilineFunction->None]}], "+", 
+            FractionBox[
+             RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+             RowBox[{"\[DifferentialD]", "t"}],
+             MultilineFunction->None]}], ")"}]}]}]},
+       {
+        RowBox[{
+         RowBox[{
+          RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+          RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None]}], "-", 
+         RowBox[{
+          RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+          RowBox[{"sin", "(", "\[Phi]", ")"}], " ", 
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None]}]}]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+        "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column], "\[NoBreak]", ")"}],
+   Function[BoxForm`e$, 
+    MatrixForm[BoxForm`e$]]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.7454312325159025`*^9, 3.745536863380166*^9, 
+  3.7455368959036837`*^9},
+ CellLabel->
+  "Out[24]//TraditionalForm=",ExpressionUUID->"3916aaf2-1c1f-4fb6-b2a8-\
+b4a1afc326fc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{"C3", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "3"}], "]"}], "]"}], "]"}], "//", "MatrixForm"}], "//",
+   "TraditionalForm"}]], "Input",
+ CellChangeTimes->{{3.745431246916667*^9, 3.745431247550723*^9}, {
+  3.745536786838484*^9, 3.7455367930929227`*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"4e988e2e-2488-410c-9e48-67b0a109c67a"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{"(", "\[NoBreak]", 
+    TagBox[GridBox[{
+       {
+        RowBox[{
+         RowBox[{
+          RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+          RowBox[{"cos", "(", "\[Psi]", ")"}], " ", 
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None]}], "+", 
+         RowBox[{
+          RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+          RowBox[{"sin", "(", "\[Psi]", ")"}], " ", 
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None]}]}]},
+       {
+        RowBox[{
+         RowBox[{
+          RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+          RowBox[{"sin", "(", "\[Psi]", ")"}], " ", 
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None]}], "-", 
+         RowBox[{
+          RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+          RowBox[{"cos", "(", "\[Psi]", ")"}], " ", 
+          FractionBox[
+           RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+           RowBox[{"\[DifferentialD]", "t"}],
+           MultilineFunction->None]}]}]},
+       {
+        RowBox[{
+         RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+            RowBox[{"\[DifferentialD]", "t"}],
+            MultilineFunction->None]}], ")"}]}]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+        "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.5599999999999999]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}],
+     Column], "\[NoBreak]", ")"}],
+   Function[BoxForm`e$, 
+    MatrixForm[BoxForm`e$]]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.745431248061061*^9, 3.745536899567658*^9},
+ CellLabel->
+  "Out[25]//TraditionalForm=",ExpressionUUID->"3c87863f-eae3-4728-8e3c-\
+ca65199897b5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"D3", " ", "=", " ", 
+   RowBox[{"A3", ".", "C3"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"FullSimplify", "[", "D3", "]"}], "//", 
+  "TraditionalForm"}]}], "Input",
+ CellChangeTimes->{{3.7449777446673117`*^9, 3.744977761880728*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"9af6df92-f683-4afc-99e3-9856c686d450"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"0", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None]}], "-", 
+       RowBox[{
+        RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Theta]", ")"}]}], "-", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Phi]", ")"}]}]}]},
+     {
+      RowBox[{
+       FractionBox[
+        RowBox[{"\[DifferentialD]", "\[Phi]"}], 
+        RowBox[{"\[DifferentialD]", "t"}],
+        MultilineFunction->None], "+", 
+       RowBox[{
+        RowBox[{"cos", "(", "\[Theta]", ")"}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None]}]}], "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"cos", "(", "\[Phi]", ")"}]}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None]}], "-", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+        RowBox[{"sin", "(", "\[Phi]", ")"}]}]}]},
+     {
+      RowBox[{
+       RowBox[{
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Phi]", ")"}]}], "-", 
+       RowBox[{
+        RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Theta]", ")"}]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"cos", "(", "\[Phi]", ")"}], " ", 
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Theta]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None]}], "+", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"\[DifferentialD]", "\[Psi]"}], 
+         RowBox[{"\[DifferentialD]", "t"}],
+         MultilineFunction->None], " ", 
+        RowBox[{"sin", "(", "\[Theta]", ")"}], " ", 
+        RowBox[{"sin", "(", "\[Phi]", ")"}]}]}], "0"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.744977762892988*^9, 3.74553690557745*^9},
+ CellLabel->
+  "Out[27]//TraditionalForm=",ExpressionUUID->"03b671f2-4681-4281-b0f0-\
+2a6be9111ae6"]
+}, Open  ]]
+},
+WindowSize->{1536, 781},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+PrintingCopies->1,
+PrintingPageRange->{32000, 32000},
+PrintingOptions->{"Magnification"->1.,
+"PaperOrientation"->"Landscape",
+"PaperSize"->{792, 612}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2314, 61, 143, "Input",ExpressionUUID->"ae7d4b44-0f1c-484b-be77-55a4befdd355"],
+Cell[2897, 85, 1009, 28, 79, "Output",ExpressionUUID->"a224e1cc-a809-476b-9324-1d8fbf54b283"],
+Cell[3909, 115, 1015, 28, 79, "Output",ExpressionUUID->"c48bb64b-5dfe-4fff-a564-f9ca86740270"],
+Cell[4927, 145, 1009, 28, 79, "Output",ExpressionUUID->"c2b785c1-2aac-473b-8859-53cc9c3e3995"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5973, 178, 360, 7, 48, "Input",ExpressionUUID->"55a9bd53-a066-4f37-b1ce-d87eb05c0c4e"],
+Cell[6336, 187, 2552, 70, 79, "Output",ExpressionUUID->"64db4812-5130-4f07-af5a-0c20a3c52684"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8925, 262, 363, 7, 48, "Input",ExpressionUUID->"3705a58e-62f2-4f9d-8316-369456b9f333"],
+Cell[9291, 271, 2584, 71, 79, "Output",ExpressionUUID->"172b2422-5513-4c05-809b-b070a37de18c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11912, 347, 821, 15, 48, "Input",ExpressionUUID->"7bcc49eb-6c19-4e6c-b2a3-7da53fed9a9f"],
+Cell[12736, 364, 9843, 258, 122, "Output",ExpressionUUID->"f09de836-1a49-454d-93ac-83e5165831b1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22616, 627, 471, 11, 28, "Input",ExpressionUUID->"981065c1-912a-4fd0-9779-43f95b05a6f3"],
+Cell[23090, 640, 4812, 124, 122, "Output",ExpressionUUID->"91f5b400-3e16-4496-a218-1787d0da2892"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27939, 769, 473, 11, 28, "Input",ExpressionUUID->"b17060c2-8ec5-4bac-a31e-e5e60462cb1d"],
+Cell[28415, 782, 4837, 124, 122, "Output",ExpressionUUID->"3916aaf2-1c1f-4fb6-b2a8-b4a1afc326fc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33289, 911, 422, 10, 28, "Input",ExpressionUUID->"4e988e2e-2488-410c-9e48-67b0a109c67a"],
+Cell[33714, 923, 2332, 63, 120, "Output",ExpressionUUID->"3c87863f-eae3-4728-8e3c-ca65199897b5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36083, 991, 361, 8, 48, "Input",ExpressionUUID->"9af6df92-f683-4afc-99e3-9856c686d450"],
+Cell[36447, 1001, 3622, 101, 175, "Output",ExpressionUUID->"03b671f2-4681-4281-b0f0-2a6be9111ae6"]
+}, Open  ]]
+}
+]
+*)
+
